@@ -6,54 +6,43 @@
 }
 
 body {
-  height: 100vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(28, 36, 61, 0.8),
-      rgba(28, 36, 61, 0.8)
-    ),
-    url("./assets/pexels-maxyne-barcel-10402282\ 1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgba(7, 4, 58, 0.678)
+    url(./assets/pexels-maxyne-barcel-10402282\ 1.png) no-repeat fixed;
   background-position: center;
-}
-
-.container {
-  max-width: 85rem;
-  margin: 0 auto;
+  background-size: cover;
+  overflow: hidden;
+  background-blend-mode: darken;
 }
 /* ------------------------------ */
 /* ---------- NAVBAR ------------ */
 /* ------------------------------ */
-section .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 20vh;
-}
-.navbar div img {
-  width: 120px;
-}
-.navbar .list {
-  list-style-type: none;
-  color: #ffc233;
-  display: flex;
-}
-.navbar .list .list-item {
-  cursor: pointer;
-  font-size: 25px;
-}
-.navbar .list .list-item:not(:last-child) {
-  margin-right: 60px;
-}
-.navbar .button-small {
-  background-color: #ff505f;
-  border: none;
-  color: #ffffff;
-  padding: 9px 30px;
-  font-size: 19px;
+  margin: 2rem 5rem;
 }
 
+.list-item {
+  list-style: none;
+  margin: 0 2rem;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f4be2c;
+}
+.list {
+  display: flex;
+}
+
+.button-small {
+  padding: 10px 25px;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #eb4d4b;
+  margin-right: 2rem;
+  border: none;
+  color: #fff;
+}
 /* ------------------------------ */
 /* ---------- HERO ------------ */
 /* ------------------------------ */
@@ -62,28 +51,30 @@ section .navbar {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.hero-heading {
+  width: 45%;
   text-align: center;
-  height: 80vh;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 2rem 2rem 2rem 4rem;
+  color: #f7cd2e;
 }
-.hero .hero-heading {
-  font-size: 4rem;
-  color: #ffc233;
-  font-family: "Dela Gothic One";
-  max-width: 800px;
-  line-height: 5rem;
-}
-.hero .button-large {
-  background-color: #ff505f;
+
+.button-large {
+  padding: 25px 25px;
+  font-size: 31px;
+  font-weight: 600;
+  background-color: #eb4d4b;
+  margin-top: 2rem;
   border: none;
-  color: #ffffff;
-  padding: 15px 40px;
-  font-size: 19px;
-  margin-top: 40px;
+  color: #fff;
+  text-align: center;
+  align-items: center;
 }
-.hero .bottom {
-  align-self: flex-end;
-  padding-top: 90px;
-}
-.hero .bottom img {
-  width: 120px;
+.bottom {
+  position: relative;
+  bottom: 7rem;
+  left: 33%;
+  width: 40px;
 }
